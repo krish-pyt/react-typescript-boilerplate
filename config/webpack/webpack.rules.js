@@ -22,12 +22,10 @@ module.exports = [
     ],
   },
   {
-    // SCSS (SASS) Loader
     test: /\.s[ac]ss$/i,
     use: [
       { loader: inDev() ? 'style-loader' : MiniCssExtractPlugin.loader },
       { loader: 'css-loader' },
-      { loader: 'sass-loader' },
     ],
   },
   {
@@ -36,7 +34,6 @@ module.exports = [
     use: [
       { loader: inDev() ? 'style-loader' : MiniCssExtractPlugin.loader },
       { loader: 'css-loader' },
-      { loader: 'less-loader' },
     ],
   },
   {
